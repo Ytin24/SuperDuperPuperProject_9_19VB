@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;x64</Platforms>
+    <ApplicationIcon>Assets\logo.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\-.png" />
+    <None Remove="Assets\logo.ico" />
+    <None Remove="Assets\minus.png" />
+    <None Remove="Assets\plus.png" />
+    <None Remove="Assets\x.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="cef.redist.x64" Version="107.1.12" />
+    <PackageReference Include="CefSharp.Common.NETCore" Version="107.1.120" />
+    <PackageReference Include="CefSharp.Wpf.NETCore" Version="107.1.120" />
+    <PackageReference Include="ClosedXML" Version="0.97.0" />
+    <PackageReference Include="HtmlAgilityPack.NetCore" Version="1.5.0.1" />
+    <PackageReference Include="RestSharp" Version="108.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\-.png" />
+    <Resource Include="Assets\logo.ico" />
+    <Resource Include="Assets\minus.png" />
+    <Resource Include="Assets\plus.png" />
+    <Resource Include="Assets\x.png" />
+  </ItemGroup>
+
+</Project>
