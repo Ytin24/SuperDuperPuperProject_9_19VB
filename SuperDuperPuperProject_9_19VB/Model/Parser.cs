@@ -125,7 +125,7 @@ namespace SuperDuperPuperProject_9_19VB.Model {
             }
         }
 
-
+        //дадада я дада я
         private async void GetDataFromOtherPages(RestClient client, RestRequest request, KadArbitrClass body, int pages) {
             int page = 2;
             for (; page <= pages; page++) {
